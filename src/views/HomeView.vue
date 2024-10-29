@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MainLayout from '@/layouts/MainLayout.vue'
 import JoinContent from '@/components/JoinContent.vue'
-import SocmedIcon from '@/components/SocmedIcon.vue'
-import AuthorCard from '@/components/CardAuthor.vue'
+import CardAuthor from '@/components/CardAuthor.vue'
+import CardCategory from '@/components/CardCategory.vue'
 </script>
 
 <template>
@@ -92,34 +92,10 @@ import AuthorCard from '@/components/CardAuthor.vue'
       <section class="flex flex-col gap-8 bg-white px-[80px] py-[40px]">
         <h2 class="text-x-black text-4xl text-center font-bold leading-[48px] tracking-[-2px]">Choose A Category</h2>
         <div class="flex items-center justify-between gap-6">
-          <a href="/category" class="w-[296px] h-[228px] flex flex-col gap-4 border border-x-mediumgrey bg-opacity-30 p-6 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
-            <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-              <img src="@/assets/images/logo/business.png" alt="Business">
-            </div>
-            <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">Business</h3>
-            <p class="text-x-mediumgrey leading-[28px] group-hover:text-white transition duration-200 ease-in-out">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-          </a>
-          <div class="w-[296px] h-[228px] flex flex-col bg-x-blue gap-4 p-6">
-            <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-              <img src="@/assets/images/logo/startup.png" alt="Business">
-            </div>
-            <h3 class="text-white text-3xl font-bold leading-[40px] tracking-[-1px]">Startup</h3>
-            <p class="text-white leading-[28px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-          </div>
-          <a href="/category" class="w-[296px] h-[228px] flex flex-col gap-4 border border-x-mediumgrey bg-opacity-30 p-6 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
-            <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-              <img src="@/assets/images/logo/economy.png" alt="Economy">
-            </div>
-            <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">Economy</h3>
-            <p class="text-x-mediumgrey leading-[28px] group-hover:text-white transition duration-200 ease-in-out">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-          </a>
-          <a href="/category" class="w-[296px] h-[228px] flex flex-col gap-4 border border-x-mediumgrey bg-opacity-30 p-6 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
-            <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-              <img src="@/assets/images/logo/technology.png" alt="Technology">
-            </div>
-            <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">Technology</h3>
-            <p class="text-x-mediumgrey leading-[28px] group-hover:text-white transition duration-200 ease-in-out">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-          </a>
+          <CardCategory link="/category" logo="business.png" title="Business" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+          <CardCategory link="/category" logo="startup.png" title="Startup" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+          <CardCategory link="/category" logo="economy.png" title="Economy" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+          <CardCategory link="/category" logo="technology.png" title="Technology" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
         </div>
       </section>
 
@@ -145,48 +121,48 @@ import AuthorCard from '@/components/CardAuthor.vue'
       <section class="flex flex-col gap-8 bg-white px-[80px] py-[40px]">
         <h2 class="text-x-black text-4xl text-center font-bold leading-[48px] tracking-[-2px]">List of Authors</h2>
         <div class="flex items-center justify-between gap-6">
-          <AuthorCard
+          <CardAuthor
             name="Floyd Miles"
             position="Content Writer @Company"
             image="author-1.png"
             :socialLinks="[
-              { filename: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { filename: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { filename: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { filename: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
+              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
+              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
+              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
             ]"
           />
-          <AuthorCard
+          <CardAuthor
             name="Dianne Russell"
             position="Content Writer @Company"
             image="author-2.png"
             :socialLinks="[
-              { filename: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { filename: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { filename: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { filename: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
+              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
+              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
+              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
             ]"
           />
-          <AuthorCard
+          <CardAuthor
             name="Jenny Wilson"
             position="Content Writer @Company"
             image="author-3.png"
             :socialLinks="[
-              { filename: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { filename: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { filename: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { filename: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
+              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
+              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
+              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
             ]"
           />
-          <AuthorCard
+          <CardAuthor
             name="Lesly Alexander"
             position="Content Writer @Company"
             image="author-4.png"
             :socialLinks="[
-              { filename: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { filename: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { filename: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { filename: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
+              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
+              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
+              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
             ]"
           />
         </div>

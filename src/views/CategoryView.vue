@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import PostContent from '@/components/PostContent.vue';
 import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
@@ -17,54 +18,50 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
       <section class="bg-wgite p-[80px] flex justify-between items-start gap-4">
         <article class="flex flex-col gap-8 w-[70%]">
-          <div class="flex justify-between items-center gap-8">
-            <img class="w-[294px] h-[312px]" src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board">
-            <div class="flex flex-col gap-4">
-              <p class="text-x-yellow font-semibold leading-[20px] tracking-[3px]">BUSINESS</p>
-              <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">
-                Top 6 free website mockup tools 2022
-              </h2>
-              <p class="text-x-mediumgrey leading-[28px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-              </p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center gap-8">
-            <img class="w-[294px] h-[312px]" src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board">
-            <div class="flex flex-col gap-4">
-              <p class="text-x-yellow font-semibold leading-[20px] tracking-[3px]">BUSINESS</p>
-              <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">
-                Top 6 free website mockup tools 2022
-              </h2>
-              <p class="text-x-mediumgrey leading-[28px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-              </p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center gap-8">
-            <img class="w-[294px] h-[312px]" src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board">
-            <div class="flex flex-col gap-4">
-              <p class="text-x-yellow font-semibold leading-[20px] tracking-[3px]">BUSINESS</p>
-              <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">
-                Top 6 free website mockup tools 2022
-              </h2>
-              <p class="text-x-mediumgrey leading-[28px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-              </p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center gap-8">
-            <img class="w-[294px] h-[312px]" src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board">
-            <div class="flex flex-col gap-4">
-              <p class="text-x-yellow font-semibold leading-[20px] tracking-[3px]">BUSINESS</p>
-              <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">
-                Top 6 free website mockup tools 2022
-              </h2>
-              <p class="text-x-mediumgrey leading-[28px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-              </p>
-            </div>
-          </div>
+          <PostContent
+            link="blog/post"
+            image="two-woman-in-erase-board.png"
+            :width="294"
+            :height="312"
+            category="BUSINESS"
+            title="Top 6 free website mockup tools 2022"
+            description="
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          />
+          <PostContent
+            link="blog/post"
+            image="two-woman-in-erase-board.png"
+            :width="294"
+            :height="312"
+            category="BUSINESS"
+            title="Top 6 free website mockup tools 2022"
+            description="
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          />
+          <PostContent
+            link="blog/post"
+            image="two-woman-in-erase-board.png"
+            :width="294"
+            :height="312"
+            category="BUSINESS"
+            title="Top 6 free website mockup tools 2022"
+            description="
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          />
+          <PostContent
+            link="blog/post"
+            image="two-woman-in-erase-board.png"
+            :width="294"
+            :height="312"
+            category="BUSINESS"
+            title="Top 6 free website mockup tools 2022"
+            description="
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          />
         </article>
         <aside class="w-[27%]">
           <div class="flex flex-col gap-10">

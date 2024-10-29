@@ -23,7 +23,7 @@
       <SocmedIcon
         v-for="(link, index) in socialLinks"
         :key="index"
-        :filename="link.filename"
+        :logo="link.logo"
         :link="link.url"
         :size="24"
         :altText="link.altText"
@@ -51,7 +51,7 @@ const props = defineProps({
   },
   socialLinks: {
     type: Array as () => Array<{
-      filename: string
+      logo: string
       url: string
       altText: string
     }>,

@@ -2,7 +2,7 @@
   <li>
     <a :href="link" target="_blank" rel="noopener noreferrer">
       <img
-        :src="computedSrc"
+        :src="logoSrc"
         :alt="altText"
         :class="computedSize"
         class="hover:opacity-75 transition duration-150 ease-in-out"
@@ -16,7 +16,7 @@ import { computed } from 'vue'
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  filename: {
+  logo: {
     type: String,
     required: true,
   },
@@ -34,6 +34,6 @@ const props = defineProps({
   },
 })
 
-const computedSrc = computed(() => `/src/assets/images/logo/${props.filename}`)
+const logoSrc = computed(() => `/src/assets/images/logo/${props.logo}`)
 const computedSize = computed(() => `w-[${props.size}px] h-[${props.size}px]`)
 </script>

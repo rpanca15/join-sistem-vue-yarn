@@ -37,10 +37,10 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
       <div class="flex items-center justify-between">
         <span class="text-white text-opacity-70">Finstreet 118 2561 Fintown</span>
         <ul class="flex items-center gap-6">
-          <SocmedIcon filename="facebook.png" link="#" :size="24" altText="Facebook Logo" />
-          <SocmedIcon filename="twitter.png" link="#" :size="24" altText="Twitter Logo" />
-          <SocmedIcon filename="instagram.png" link="#" :size="24" altText="Instagram Logo" />
-          <SocmedIcon filename="linkedin.png" link="#" :size="24" altText="Linkedin Logo" />
+          <SocmedIcon logo="facebook.png" link="#" :size="24" altText="Facebook Logo" />
+          <SocmedIcon logo="twitter.png" link="#" :size="24" altText="Twitter Logo" />
+          <SocmedIcon logo="instagram.png" link="#" :size="24" altText="Instagram Logo" />
+          <SocmedIcon logo="linkedin.png" link="#" :size="24" altText="Linkedin Logo" />
         </ul>
       </div>
       <span class="text-white text-opacity-70">Hello@finsweet.com 020 7993 2905</span>

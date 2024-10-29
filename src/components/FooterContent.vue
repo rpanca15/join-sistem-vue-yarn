@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SocmedIcon from '@/components/SocmedIcon.vue';
+</script>
 
 <template>
   <footer class="px-14 pb-14 pt-10 bg-x-black">
@@ -35,26 +37,10 @@
       <div class="flex items-center justify-between">
         <span class="text-white text-opacity-70">Finstreet 118 2561 Fintown</span>
         <ul class="flex items-center gap-6">
-          <li>
-            <a href="#">
-              <img src="@/assets/images/logo/facebook.png" alt="" class="hover:opacity-75 transition duration-150 ease-in-out">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="@/assets/images/logo/twitter.png" alt="" class="hover:opacity-75 transition duration-150 ease-in-out">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="@/assets/images/logo/instagram.png" alt="" class="hover:opacity-75 transition duration-150 ease-in-out">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="@/assets/images/logo/linkedin.png" alt="" class="hover:opacity-75 transition duration-150 ease-in-out">
-            </a>
-          </li>
+          <SocmedIcon filename="facebook.png" link="#" :size="24" altText="Facebook Logo" />
+          <SocmedIcon filename="twitter.png" link="#" :size="24" altText="Twitter Logo" />
+          <SocmedIcon filename="instagram.png" link="#" :size="24" altText="Instagram Logo" />
+          <SocmedIcon filename="linkedin.png" link="#" :size="24" altText="Linkedin Logo" />
         </ul>
       </div>
       <span class="text-white text-opacity-70">Hello@finsweet.com 020 7993 2905</span>

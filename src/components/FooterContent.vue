@@ -24,7 +24,7 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
         </li>
       </ul>
     </div>
-    <div class="w-full h-[256px] bg-white bg-opacity-5 p-10 flex justify-center items-center gap-4 mb-10">
+    <div class="w-full h-[256px] bg-white bg-opacity-5 p-10 flex justify-between items-center gap-4 mb-10">
         <p class="text-white text-4xl font-bold w-[562px]">Subscribe to our news letter to get latest updates and news</p>
         <form action="#" class="flex items-center justify-center gap-4 mb-5">
           <input type="text" class="w-[323px] bg-transparent border border-x-darkgrey p-4 text-white" placeholder="Enter Your Email" required>

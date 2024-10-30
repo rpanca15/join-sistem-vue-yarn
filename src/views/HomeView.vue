@@ -3,6 +3,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 import JoinContent from '@/components/JoinContent.vue'
 import CardAuthor from '@/components/CardAuthor.vue'
 import CardCategory from '@/components/CardCategory.vue'
+import TestimoniContent from '@/components/TestimoniContent.vue';
 </script>
 
 <template>
@@ -185,27 +186,14 @@ import CardCategory from '@/components/CardCategory.vue'
 
       <!-- Testimoni -->
       <section class="bg-white px-[80px] py-[40px]">
-        <div class="bg-x-lightyellow flex justify-between gap-[40px] p-[112px]">
-          <div class="w-[40%] flex flex-col gap-4">
+        <div class="bg-x-lightyellow flex justify-between gap-20 px-[112px] py-[80px]">
+          <div class="w-[44%] flex flex-col gap-4">
             <h5 class="text-x-black font-semibold leading-[20px] tracking-[3px]">TESTIMONIALS</h5>
             <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">What people say about our blog</h2>
             <p class="text-x-black leading-[28px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
-          <div class="w-[60%] flex flex-col justify-between gap-[112px] ps-[80px] border-s border-x-mediumgrey border-opacity-40">
-            <h4 class="text-x-black text-xl font-bold leading-[32px] pe-[56px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            <div class="flex justify-between items-center">
-              <div class="flex items-center justify-center gap-4">
-                <img src="@/assets/images/misc/man-with-glasses.png" alt="Man with glasses">
-                <div>
-                  <h4 class="text-x-black text-xl font-bold leading-[32px]">Jonathan Vallen</h4>
-                  <p class="text-x-mediumgrey leading-[28px]">New york, USA</p>
-                </div>
-              </div>
-              <div>
-
-              </div>
-            </div>
-          </div>
+          <div class="border border-x-mediumgrey border-opacity-40"></div>
+          <TestimoniContent />
         </div>
       </section>
 

@@ -1,12 +1,12 @@
 <template>
-  <a :href="link" class="flex justify-start items-center gap-8">
-    <img :src="imageSrc" :alt="image" :class="computedSize">
+  <RouterLink :to="link" class="flex justify-center items-center gap-8">
+    <img :src="imageSrc" :alt="image" :style="{ width: `${props.width}px`, height: `${props.height}px` }">
     <div class="flex flex-col gap-4">
       <p class="text-x-yellow font-semibold leading-[20px] tracking-[3px]">{{ category }}</p>
       <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">{{ title }}</h2>
       <p class="text-x-mediumgrey leading-[28px]">{{ description }}</p>
     </div>
-  </a>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
@@ -43,5 +43,4 @@ const props = defineProps({
 })
 
 const imageSrc = computed(() => `/src/assets/images/misc/${props.image}`)
-const computedSize = computed(() => `w-[${props.width}px] h-[${props.height}px]`)
 </script>

@@ -10,7 +10,7 @@ import TestimoniContent from '@/components/TestimoniContent.vue';
   <MainLayout>
     <main class="w-full h-full overflow-x-hidden">
       <!-- Hero -->
-      <section class="h-[720px] bg-[url('@/assets/images/misc/cover.png')] bg-cover">
+      <section class="h-[720px] bg-[url('@/assets/images/misc/cover.png')] bg-cover mt-[80px]">
         <div class="w-full h-full flex flex-col gap-5 px-[80px] pt-[128px] bg-x-black bg-opacity-40">
           <h5 class="text-white text-start font-semibold tracking-[3px]">POSTED ON <span class="font-black">STARTUP</span></h5>
           <h1 class="w-[80%] text-white text-[56px] font-bold tracking-[-2px] leading-[64px]">Step-by-step guide to choosing great font pairs</h1>
@@ -26,7 +26,7 @@ import TestimoniContent from '@/components/TestimoniContent.vue';
 
       <!-- Featured Post -->
       <section class="bg-white px-[80px] pt-[128px] pb-[40px] flex justify-between gap-8">
-        <div class="h-[804px] flex flex-col gap-4">
+        <div class="flex flex-col gap-4">
           <h2 class="text-x-black text-4xl font-bold leading-[48px] tracking-[-2px]">Featured Post</h2>
           <div class="w-full flex-grow border p-8">
             <img class="w-full object-cover mb-8" src="@/assets/images/misc/white-building.png" alt="White Building">
@@ -40,7 +40,7 @@ import TestimoniContent from '@/components/TestimoniContent.vue';
             </div>
           </div>
         </div>
-        <div class="h-[804px] flex flex-col gap-4">
+        <div class="flex flex-col gap-4">
           <div class="flex items-center justify-between">
             <h2 class="text-x-black text-4xl font-bold leading-[48px] tracking-[-2px]">All Post</h2>
             <a href="#" class="text-x-yellow leading-[28px]">View All</a>
@@ -50,7 +50,7 @@ import TestimoniContent from '@/components/TestimoniContent.vue';
               <label class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;|&nbsp; Aug 23, 2021</label>
               <h4 class="text-x-black text-2xl font-bold leading-[32px] w-[369px]">8 Figma design systems that you can download for free today.</h4>
             </div>
-            <div class="bg-x-lightyellow w-[517px] h-[181px] flex flex-col justify-center p-8 gap-2">
+            <div class="w-[517px] h-[181px] flex flex-col justify-center p-8 gap-2 hover:bg-x-lightyellow hover:cursor-pointer transition duration-200 ease-in-out">
               <label class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;&nbsp; Aug 23, 2021</label>
               <h4 class="text-x-black text-2xl font-bold leading-[32px] w-[369px]">8 Figma design systems that you can download for free today.</h4>
             </div>
@@ -76,7 +76,7 @@ import TestimoniContent from '@/components/TestimoniContent.vue';
         <div class="bg-x-lightgrey p-[80px] flex justify-between gap-[80px]">
           <div class="w-[50%] flex flex-col gap-4">
             <h5 class="text-x-black text-start font-semibold tracking-[3px] leading-[20px]">ABOUT US</h5>
-            <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">We are a community of content writers who share their learnings</h2>
+            <h1 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">We are a community of content writers who share their learnings</h1>
             <p class="text-x-mediumgrey leading-[28px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#" class="text-x-yellow text-[18px] font-bold leading-[32px] hover:text-x-black transition duration-200 ease-in-out">Read More ></a>
           </div>

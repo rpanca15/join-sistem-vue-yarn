@@ -1,6 +1,6 @@
 <template>
-  <div
-    class="w-[296px] bg-x-lightgrey flex flex-col items-center justify-center gap-4 p-6 hover:bg-x-lightyellow hover:cursor-pointer transition duration-200 ease-in-out"
+  <RouterLink :to="link"
+    class="w-[296px] md:w-[266px] bg-x-lightgrey flex flex-col items-center justify-center gap-4 p-6 hover:bg-x-lightyellow hover:cursor-pointer transition duration-200 ease-in-out"
   >
     <img
       :src="imageSrc"
@@ -25,11 +25,11 @@
         :key="index"
         :logo="link.logo"
         :link="link.url"
-        :size="24"
+        :size="16"
         :altText="link.altText"
       />
     </ul>
-  </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
@@ -37,6 +37,11 @@ import SocmedIcon from '@/components/SocmedIcon.vue'
 import { computed, toRefs } from 'vue'
 
 const props = defineProps({
+  link : {
+    type: String,
+    required: false,
+    default: '#',
+  },
   name: {
     type: String,
     required: true,

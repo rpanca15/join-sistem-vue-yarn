@@ -5,7 +5,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
 <template>
   <MainLayout>
-    <main class="w-full h-full overflow-x-hidden">
+    <main class="w-full h-full overflow-x-hidden py-[80px]">
       <section class="bg-x-lavender p-[80px] flex justify-center items-center">
         <div class="flex flex-col items-center gap-4">
           <h1 class="text-x-black text-[56px] font-bold leading-[64px] tracking-[-2px]">Business</h1>
@@ -16,7 +16,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
         </div>
       </section>
 
-      <section class="bg-wgite p-[80px] flex justify-between items-start gap-4">
+      <section class="bg-white p-[80px] flex justify-between items-start gap-4">
         <article class="flex flex-col gap-8 w-[70%]">
           <PostContent
             link="blog/post"

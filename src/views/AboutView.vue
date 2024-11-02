@@ -66,16 +66,12 @@ import MainLayout from '@/layouts/MainLayout.vue'
         </div>
         <div class="relative h-[480px] w-full">
           <img src="@/assets/images/misc/group-growth-hands.png" alt="Growth hands" class="h-full w-full object-cover" />
-          <div class="w-[50px] lg:w-[103px] h-[58px] lg:h-[116px] rounded-tl-[25px] lg:rounded-tl-[50px] bg-x-blue absolute top-10 left-[-26px] lg:left-[-52px]"></div>
+          <div class="w-[50px] md:w-[75px] lg:w-[103px] h-[58px] md:h-[86px] lg:h-[116px] rounded-tl-[25px] lg:rounded-tl-[50px] bg-x-blue absolute top-20 lg:top-10 left-[-26px] md:left-[-39px] lg:left-[-52px]"></div>
         </div>
       </section>
 
-      <section class="px-[80px] flex justify-between items-center relative gap-20">
-        <div class="relative h-[480px] w-[50%]">
-          <img src="@/assets/images/misc/three-persons.png" alt="Three persons" class="h-full w-full object-cover" />
-          <div class="w-[74px] h-[74px] rounded-full bg-x-yellow absolute bottom-[-37px] left-20"></div>
-        </div>
-        <div class="flex flex-col gap-4 w-[50%]">
+      <section class="px-[40px] md:px-[60px] lg:px-[80px] flex flex-col lg:flex-row justify-between items-center relative gap-[40px]">
+        <div class="flex flex-col gap-4 w-full lg:order-last">
           <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">Why we started this Blog </h2>
           <h4 class="text-x-black text-3xl font-bold leading-[32px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
           <p class="text-x-mediumgrey leading-[28px]">
@@ -83,98 +79,110 @@ import MainLayout from '@/layouts/MainLayout.vue'
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
         </div>
+        <div class="relative h-[480px] w-full">
+          <img src="@/assets/images/misc/three-persons.png" alt="Three persons" class="h-full w-full object-cover" />
+          <div class="w-[57px] lg:w-[76px] h-[57px] lg:h-[76px] rounded-full bg-x-yellow absolute bottom-[-27px] lg:bottom-[-38px] md:left-40 lg:left-20 left-20"></div>
+        </div>
       </section>
 
       <!-- List Author -->
-      <section class="flex flex-col gap-8 bg-white py-[48px] px-[80px]">
+      <section class="flex flex-col gap-8 bg-white pt-[48px] px-[40px] md:px-[60px]">
         <h2 class="text-x-black text-4xl text-center font-bold leading-[48px] tracking-[-2px]">List of Authors</h2>
         <div class="w-full flex flex-wrap items-center justify-center gap-6">
           <CardAuthor
+            link="author"
             name="Floyd Miles"
             position="Content Writer @Company"
             image="author-1.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText:'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Dianne Russell"
             position="Content Writer @Company"
             image="author-2.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Jenny Wilson"
             position="Content Writer @Company"
             image="author-3.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Lesly Alexander"
             position="Content Writer @Company"
             image="author-4.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Guy Hawkins"
             position="Content Writer @Company"
             image="author-5.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Eleanor Pena"
             position="Content Writer @Company"
             image="author-6.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Robert Fox"
             position="Content Writer @Company"
             image="author-7.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
           <CardAuthor
+            link="author"
             name="Jacob Jones"
             position="Content Writer @Company"
             image="author-8.png"
             :socialLinks="[
-              { logo: 'facebook.png', url: '#', altText: 'Facebook Logo' },
-              { logo: 'twitter.png', url: '#', altText: 'Twitter Logo' },
-              { logo: 'instagram.png', url: '#', altText: 'Instagram Logo' },
-              { logo: 'linkedin.png', url: '#', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
             ]"
           />
         </div>

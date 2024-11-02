@@ -10,7 +10,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
         <p class="text-center text-x-mediumgrey leading-[28px]">Last Updated  on 27th January 2022</p>
       </section>
 
-      <section class="bg-white px-[40px] md:px-[80px] pt-[48px] flex items-center justify-center">
+      <section class="bg-white px-[40px] md:px-[60px] lg:px-[80px] pt-[48px] flex items-center justify-center">
         <article class="flex flex-col items-center gap-8 md:w-[70%]">
           <div class="flex flex-col gap-4">
             <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">Lorem ipsum dolor sit amet</h2>

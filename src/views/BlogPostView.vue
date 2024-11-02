@@ -5,9 +5,9 @@ import JoinContent from '@/components/JoinContent.vue'
 
 <template>
   <MainLayout>
-    <main class="w-full h-full overflow-x-hidden">
-      <section class="px-[80px] pt-[80px] flex justify-center items-center mt-[80px]">
-        <div class="flex flex-col items-start gap-4 pt-[48px] px-[256px]">
+    <main class="w-full h-full overflow-x-hidden flex flex-col gap-[40px] md:gap-[80px] py-[80px]">
+      <section class="px-[40px] md:px-[60px] lg:px-[80px] pt-[80px] flex justify-center items-center">
+        <div class="w-full md:w-3/4 lg:w-1/2 flex flex-col items-start gap-4 md:pt-[48px]">
           <div class="flex items-center justify-center gap-4">
             <img src="@/assets/images/misc/man-with-glasses.png" alt="Man with glasses">
             <div>
@@ -23,12 +23,12 @@ import JoinContent from '@/components/JoinContent.vue'
         </div>
       </section>
 
-      <div class="px-[80px] py-[40px]">
+      <div class="px-[40px] md:px-[60px] lg:px-[80px] py-[40px]">
         <img src="@/assets/images/misc/woman-with-glasses.png" alt="Woman with glasses">
       </div>
 
-      <section class="bg-white px-[80px] py-[40px]">
-        <article class="flex flex-col items-center gap-8 px-[219px]">
+      <section class="bg-white px-[40px] md:px-[60px] lg:px-[80px] flex items-center justify-center lg:py-[48px]">
+        <article class="flex flex-col items-center gap-8 w-full md:w-[80%] lg:w-[60%]">
           <div class="flex flex-col gap-4">
             <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
             <p class="text-x-mediumgrey leading-[28px]">
@@ -66,10 +66,10 @@ import JoinContent from '@/components/JoinContent.vue'
         </article>
       </section>
 
-      <section class="px-[80px] py-[40px]">
-        <div class="flex flex-col gap-8 py-[40px] border-b border-x-mediumgrey border-opacity-30">
+      <section class="px-[40px] md:px-[60px] lg:px-[80px] py-[40px]">
+        <div class="flex flex-col gap-8 pb-[40px] border-b border-x-mediumgrey border-opacity-30">
           <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">What to read next</h2>
-          <div class="flex justify-between items-center gap-6">
+          <div class="flex flex-col lg:flex-row justify-between items-center gap-20 lg:gap-6">
             <div class="flex flex-col gap-4 hover:cursor-pointer">
               <img src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board">
               <p class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;|&nbsp; Aug 23, 2021</p>

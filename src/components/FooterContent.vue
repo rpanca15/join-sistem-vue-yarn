@@ -8,19 +8,19 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
       <img src="@/assets/images/logo/finsweet.png" alt="{Finsweet"/>
       <ul class="flex flex-wrap gap-4 md:gap-6 items-center justify-center">
         <li>
-          <RouterLink to="/" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Home</RouterLink>
+          <a href="/" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Home</a>
         </li>
         <li>
-          <RouterLink to="blog" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Blog</RouterLink>
+          <a href="blog" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Blog</a>
         </li>
         <li>
-          <RouterLink to="about" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">About Us</RouterLink>
+          <a href="about" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">About Us</a>
         </li>
         <li>
-          <RouterLink to="contact" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Contact Us</RouterLink>
+          <a href="contact" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Contact Us</a>
         </li>
         <li>
-          <RouterLink to="privacy" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Privacy Policy</RouterLink>
+          <a href="privacy" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Privacy Policy</a>
         </li>
       </ul>
     </div>
@@ -36,10 +36,10 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
     <div>
       <div class="flex flex-col md:flex-row items-start justify-between gap-4">
         <ul class="w-full flex md:order-last justify-center md:justify-end items-center gap-6">
-          <SocmedIcon logo="facebook.png" link="#" :size="16" altText="Facebook Logo" />
-          <SocmedIcon logo="twitter.png" link="#" :size="16" altText="Twitter Logo" />
-          <SocmedIcon logo="instagram.png" link="#" :size="16" altText="Instagram Logo" />
-          <SocmedIcon logo="linkedin.png" link="#" :size="16" altText="Linkedin Logo" />
+          <SocmedIcon color="x-mediumgrey" icon="facebook" link="#" altText="Facebook Logo" />
+          <SocmedIcon color="x-mediumgrey" icon="twitter" link="#" altText="Twitter Logo" />
+          <SocmedIcon color="x-mediumgrey" icon="instagram" link="#" altText="Instagram Logo" />
+          <SocmedIcon color="x-mediumgrey" icon="linkedin" link="#" altText="Linkedin Logo" />
         </ul>
         <div class="w-full flex flex-col gap-2">
           <span class="text-white text-opacity-70">Finstreet 118 2561 Fintown</span>

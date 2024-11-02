@@ -1,18 +1,16 @@
 <template>
-  <RouterLink
-    :to="props.link"
-    :class="`flex items-center justify-center font-bold ${props.bg} px-[${props.px}px] py-[${props.py}px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out`"
-    :style="{ width: props.width === 'full' ? '100%' : `${props.width}px` }"
+  <a
+    :href="props.link"
+    :class="`w-[${props.width}px] flex items-center justify-center font-bold ${props.bg} px-[${props.px}px] py-[${props.py}px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out`"
   >
     {{ props.content }}
-  </RouterLink>
+  </a>
 </template>
 
 <script setup lang="ts">
 const props = defineProps({
   link: {
     type: String,
-    required: false,
     default: '#',
   },
   width: {

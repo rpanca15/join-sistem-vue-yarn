@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-[55%] overflow-hidden">
+  <div class="relative w-full lg:w-[55%] overflow-hidden">
     <div
       class="flex transition-transform duration-500"
       :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
@@ -12,7 +12,7 @@
         <h4 class="text-x-black text-xl font-bold leading-[32px]">
           {{ item.text }}
         </h4>
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center gap-2">
           <div class="flex items-center justify-center gap-4">
             <img :src="`${baseImage}/${item.image}`" :alt="item.altText" />
             <div>
@@ -24,18 +24,18 @@
               </p>
             </div>
           </div>
-          <div class="flex justify-between items-center gap-4">
+          <div class="flex justify-center items-center gap-2">
             <button
               @click="prev"
-              class="flex items-center justify-center bg-white rounded-full w-[48px] h-[48px] hover:bg-x-black hover:text-white"
+              class="flex items-center justify-center bg-white rounded-full w-[36px] h-[36px] md:w-[48px] md:h-[48px] hover:bg-x-black hover:text-white transition duration-150 ease-in-out"
             >
-              <i class="fas fa-arrow-left text-xl"></i>
+              <i class="fas fa-arrow-left md:text-xl"></i>
             </button>
             <button
               @click="next"
-              class="flex items-center justify-center bg-white rounded-full w-[62px] h-[62px] hover:bg-x-black hover:text-white"
+              class="flex items-center justify-center bg-white rounded-full w-[36px] h-[36px] md:w-[48px] md:h-[48px] hover:bg-x-black hover:text-white transition duration-150 ease-in-out"
             >
-              <i class="fas fa-arrow-right text-2xl"></i>
+              <i class="fas fa-arrow-right md:text-xl"></i>
             </button>
           </div>
         </div>

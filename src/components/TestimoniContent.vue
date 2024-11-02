@@ -15,6 +15,13 @@
         name: 'John Doe',
         location: 'Los Angeles, USA',
       },
+      {
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        image: 'man-with-glasses.png',
+        altText: 'Man with glasses',
+        name: 'Petter Parker',
+        location: 'New York, USA',
+      },
     ]"
   />
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="link"
+  <a :href="link"
     class="w-[296px] md:w-[266px] bg-x-lightgrey flex flex-col items-center justify-center gap-4 p-6 hover:bg-x-lightyellow hover:cursor-pointer transition duration-200 ease-in-out"
   >
     <img
@@ -23,13 +23,14 @@
       <SocmedIcon
         v-for="(link, index) in socialLinks"
         :key="index"
-        :logo="link.logo"
+        :icon="link.icon"
+        :color="link.color"
         :link="link.url"
         :size="16"
         :altText="link.altText"
       />
     </ul>
-  </RouterLink>
+  </a>
 </template>
 
 <script setup lang="ts">
@@ -56,8 +57,9 @@ const props = defineProps({
   },
   socialLinks: {
     type: Array as () => Array<{
-      logo: string
+      icon: string
       url: string
+      color: string
       altText: string
     }>,
     default: () => [],

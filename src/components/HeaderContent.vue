@@ -17,28 +17,28 @@
       </li>
       <li>
         <RouterLink
-          to="blog"
+          to="/blog"
           class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
           >Blog</RouterLink
         >
       </li>
       <li>
         <RouterLink
-          to="about"
+          to="/about"
           class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
           >About Us</RouterLink
         >
       </li>
       <li>
         <RouterLink
-          to="contact"
+          to="/contact"
           class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
           >Contact Us</RouterLink
         >
       </li>
     </ul>
     <RouterLink
-      to="contact"
+      to="/contact"
       class="hidden md:block bg-x-blue px-4 py-2 rounded-[63px] text-white hover:bg-x-yellow transition duration-150 ease-in-out"
       >Contact Us</RouterLink
     >
@@ -63,10 +63,10 @@
             aria-label="close sidebar"
             class="drawer-overlay"
           ></label>
-          <ul
-            class="flex flex-col items-center gap-2 bg-x-black min-h-full w-[80%] p-8 relative"
+          <div
+            class="flex flex-col items-center gap-2 bg-x-black min-h-full w-[80%] p-8 pt-[80px] relative"
           >
-            <li class="w-full flex justify-center items-center">
+            <a class="w-[80%] flex justify-end items-center absolute top-4">
               <label
                 for="my-drawer-4"
                 aria-label="close sidebar"
@@ -78,38 +78,33 @@
                     class="fas fa-times text-2xl text-white group-hover:text-x-black transition duration-150 ease-in-out"
                   ></i> </a
               ></label>
-            </li>
-            <li
+            </a>
+            <RouterLink
+              to="/"
               class="w-full py-2 hover:cursor-pointer text-white hover:text-x-yellow transition duration-150 ease-in-out"
-              @click="$router.push({ path: '/' })"
-            >
-              <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li
+              >Home
+            </RouterLink>
+            <RouterLink
+              to="/blog"
               class="w-full py-2 hover:cursor-pointer text-white hover:text-x-yellow transition duration-150 ease-in-out"
-              @click="$router.push({ path: 'blog' })"
-            >
-              <RouterLink to="blog">Blog</RouterLink>
-            </li>
-            <li
+              >Blog
+            </RouterLink>
+            <RouterLink
+              to="/about"
               class="w-full py-2 hover:cursor-pointer text-white hover:text-x-yellow transition duration-150 ease-in-out"
-              @click="$router.push({ path: 'about' })"
-            >
-              <RouterLink to="about" class="">About Us</RouterLink>
-            </li>
-            <li
+              >About Us
+            </RouterLink>
+            <RouterLink
+              to="/contact"
               class="w-full py-2 hover:cursor-pointer text-white hover:text-x-yellow transition duration-150 ease-in-out"
-              @click="$router.push({ path: 'contact' })"
-            >
-              <RouterLink to="contact">Contact Us</RouterLink>
-            </li>
-            <li
+              >Contact Us
+            </RouterLink>
+            <RouterLink
+              to="/contact"
               class="w-[80%] bg-x-blue px-4 py-4 rounded-[63px] text-white text-center hover:bg-x-yellow hover:cursor-pointer transition duration-150 ease-in-out absolute bottom-6"
-              @click="$router.push({ path: 'contact' })"
-            >
-              <RouterLink to="contact">Contact Us</RouterLink>
-            </li>
-          </ul>
+              >Contact Us
+            </RouterLink>
+          </div>
         </div>
       </div>
     </div>

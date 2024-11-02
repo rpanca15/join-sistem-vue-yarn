@@ -7,9 +7,10 @@ import PostContent from '@/components/PostContent.vue';
 
 <template>
   <MainLayout>
-    <main class="w-full h-full overflow-x-hidden">
+    <main class="w-full h-full overflow-x-hidden flex flex-col gap-[40px] md:gap-[80px] py-[80px]">
       <!-- Hero -->
-      <section class="bg-x-lavender p-[80px] flex justify-between items-center gap-8 mt-[80px]">
+      <section class="bg-x-lavender py-[80px] px-[40px] md:px-[60px] lg:px-[80px] flex flex-col lg:flex-row justify-between items-center gap-8">
+        <img class="lg:order-last" src="@/assets/images/misc/man-with-white-shirt.png" alt="Man with white T-Shirt">
         <div class="flex flex-col gap-5">
           <h5 class="text-x-black font-medium tracking-[3px]">FEATURED POST</h5>
           <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">Step-by-step guide to choosing great font pairs</h2>
@@ -21,13 +22,12 @@ import PostContent from '@/components/PostContent.vue';
             Read More >
           </a>
         </div>
-        <img src="@/assets/images/misc/man-with-white-shirt.png" alt="Man with white T-Shirt">
       </section>
 
       <!-- All Post -->
-      <section class="p-[80px] flex flex-col gap-8">
+      <section class="px-[40px] md:px-[60px] lg:px-[80px] pt-[80px] flex flex-col gap-8">
         <h2 class="text-x-black text-4xl font-bold leading-[48px] tracking-[-2px]">All Post</h2>
-        <div class="flex flex-col gap-8 pt-[48px] border-t border-x-mediumgrey border-opacity-32">
+        <div class="flex flex-col gap-[80px] lg:gap-8 pt-[48px] border-t border-x-mediumgrey border-opacity-32">
           <PostContent
             link="blog/post"
             image="two-woman-in-erase-board.png"
@@ -81,9 +81,9 @@ import PostContent from '@/components/PostContent.vue';
       </section>
 
       <!-- All Category -->
-      <section class="flex flex-col gap-8 bg-white px-[80px] py-[40px]">
+      <section class="flex flex-col gap-8 bg-white px-[40px] md:px-[60px] lg:px-[80px] py-[48px]">
         <h2 class="text-x-black text-4xl font-bold leading-[48px] tracking-[-2px]">All Category</h2>
-        <div class="flex items-center justify-between gap-6">
+        <div class="flex flex-wrap items-center justify-center gap-6">
           <CardCategory link="/category" logo="business.png" title="Business" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
           <CardCategory link="/category" logo="startup.png" title="Startup" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
           <CardCategory link="/category" logo="economy.png" title="Economy" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />

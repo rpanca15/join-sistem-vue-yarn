@@ -11,16 +11,16 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
           <RouterLink to="/" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Home</RouterLink>
         </li>
         <li>
-          <RouterLink to="blog" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Blog</Router>
+          <RouterLink to="blog" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Blog</RouterLink>
         </li>
         <li>
-          <RouterLink to="about" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">About Us</a>
+          <RouterLink to="about" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">About Us</RouterLink>
         </li>
         <li>
-          <RouterLink to="contact" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Contact Us</a>
+          <RouterLink to="contact" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Contact Us</RouterLink>
         </li>
         <li>
-          <RouterLink to="privacy" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Privacy Policy</a>
+          <RouterLink to="privacy" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Privacy Policy</RouterLink>
         </li>
       </ul>
     </div>

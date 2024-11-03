@@ -3,7 +3,6 @@ import MainLayout from '@/layouts/MainLayout.vue'
 import JoinContent from '@/components/JoinContent.vue'
 import CardAuthor from '@/components/CardAuthor.vue'
 import CardCategory from '@/components/CardCategory.vue'
-import CustomButton from '@/components/CustomButton.vue'
 import TestimonialCarousel from '@/components/TestimonialCarousel.vue'
 </script>
 
@@ -19,13 +18,12 @@ import TestimonialCarousel from '@/components/TestimonialCarousel.vue'
           <p class="w-full lg:w-[52%] text-white leading-[28px]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident.
           </p>
-          <CustomButton
-            link="blog/post"
-            content="Read More >"
-            :width="204"
-            :px="48"
-            :py="16"
-          />
+          <RouterLink
+            to="/blog/post"
+            class="w-[204px] flex items-center justify-center font-bold bg-x-blue px-[48px] py-[16px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out"
+          >
+            Read More {{ '>' }}
+          </RouterLink>
         </div>
       </section>
 
@@ -39,13 +37,12 @@ import TestimonialCarousel from '@/components/TestimonialCarousel.vue'
               <label class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;|&nbsp; May 23, 2022</label>
               <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
               <p class="text-x-mediumgrey w-full leading-[28px] mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-              <CustomButton
-                link="blog/post"
-                content="Read More >"
-                :width="204"
-                :px="48"
-                :py="16"
-              />
+              <RouterLink
+                to="/blog/post"
+                class="w-[204px] flex items-center justify-center font-bold bg-x-blue px-[48px] py-[16px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out"
+              >
+                Read More {{ '>' }}
+              </RouterLink>
             </div>
           </div>
         </div>
@@ -120,12 +117,12 @@ import TestimonialCarousel from '@/components/TestimonialCarousel.vue'
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
             </p>
-            <CustomButton
-              content="Discover our story >"
-              :width="269"
-              :px="48"
-              :py="16"
-            />
+            <RouterLink
+              to="#"
+              class="w-[296px] flex items-center justify-center font-bold bg-x-blue px-[48px] py-[16px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out"
+            >
+              Discover our Story {{ '>' }}
+            </RouterLink>
           </div>
         </div>
       </section>
@@ -138,7 +135,7 @@ import TestimonialCarousel from '@/components/TestimonialCarousel.vue'
             link="author"
             name="Floyd Miles"
             position="Content Writer @Company"
-            image="author-1.png"
+            :image="'author-1.png'"
             :socialLinks="[
               { icon:'facebook', url:'#', color:'x-mediumgrey' },
               { icon:'twitter', url:'#', color:'x-mediumgrey' },

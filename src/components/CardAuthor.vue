@@ -1,11 +1,12 @@
 <template>
-  <a :href="link"
+  <RouterLink :to="link"
     class="w-[296px] md:w-[266px] bg-x-lightgrey flex flex-col items-center justify-center gap-4 p-6 hover:bg-x-lightyellow hover:cursor-pointer transition duration-200 ease-in-out"
   >
     <img
-      :src="imageSrc"
+      :src="getImageUrl"
       :alt="`Author Image of ${name}`"
       class="w-[128px] h-[128px]"
+      loading="lazy"
     />
     <div class="flex flex-col items-center">
       <h3
@@ -29,12 +30,12 @@
         :size="16"
       />
     </ul>
-  </a>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
 import SocmedIcon from '@/components/SocmedIcon.vue'
-import { computed, toRefs } from 'vue'
+import { computed } from 'vue';
 
 const props = defineProps({
   link : {
@@ -64,8 +65,14 @@ const props = defineProps({
   },
 })
 
-const { image } = toRefs(props)
-const imageSrc = computed(() => `/src/assets/images/misc/${image.value}`)
+const getImageUrl = computed(() => {
+  try {
+    return new URL(`../assets/images/misc/${props.image}`, import.meta.url).href
+  } catch (error) {
+    console.error('Error loading image:', error)
+    return ''
+  }
+})
 </script>
 <!-- Ridwan Panca Putra Pamungkas -->
 <!-- V3423075 | D3TI C -->

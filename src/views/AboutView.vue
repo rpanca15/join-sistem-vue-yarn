@@ -18,7 +18,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
               <p class="text-x-darkgrey leading-[28px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
-          <img class="h-[184px] md:h-[284px] lg:h-[444px]" src="@/assets/images/misc/people-long.png" alt="People">
+          <img class="h-[184px] md:h-[284px] lg:h-[444px]" src="@/assets/images/misc/people-long.png" alt="People" loading="lazy">
           <div class="flex justify-between items-center bg-x-blue gap-[14px] md:gap-[32px] lg:gap-[74px] p-[12px] md:p-[20px] lg:p-[48px] absolute bottom-[12px] md:botom-[18px] lg:bottom-[23px] left-6 md:left-12 lg:left-28">
             <div class="flex flex-col">
               <h2 class="text-white text-xl md:text-3xl lg:text-[56px] font-bold tracking-[-2px] leading-[28px] md:leading-[36px] lg:leading-[48px]">12+</h2>
@@ -65,7 +65,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
         </div>
         <div class="relative h-[480px] w-full">
-          <img src="@/assets/images/misc/group-growth-hands.png" alt="Growth hands" class="h-full w-full object-cover" />
+          <img src="@/assets/images/misc/group-growth-hands.png" alt="Growth hands" class="h-full w-full object-cover" loading="lazy"/>
           <div class="w-[50px] md:w-[75px] lg:w-[103px] h-[58px] md:h-[86px] lg:h-[116px] rounded-tl-[25px] lg:rounded-tl-[50px] bg-x-blue absolute top-20 lg:top-10 left-[-26px] md:left-[-39px] lg:left-[-52px]"></div>
         </div>
       </section>
@@ -80,7 +80,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
         </div>
         <div class="relative h-[480px] w-full">
-          <img src="@/assets/images/misc/three-persons.png" alt="Three persons" class="h-full w-full object-cover" />
+          <img src="@/assets/images/misc/three-persons.png" alt="Three persons" class="h-full w-full object-cover" loading="lazy"/>
           <div class="w-[57px] lg:w-[76px] h-[57px] lg:h-[76px] rounded-full bg-x-yellow absolute bottom-[-27px] lg:bottom-[-38px] md:left-40 lg:left-20 left-20"></div>
         </div>
       </section>

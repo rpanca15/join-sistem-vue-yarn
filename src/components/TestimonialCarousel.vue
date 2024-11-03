@@ -14,7 +14,7 @@
         </h4>
         <div class="flex justify-between items-center gap-2">
           <div class="flex items-center justify-center gap-4">
-            <img :src="`${baseImage}${item.image}`" :alt="item.altText" />
+            <img :src="getImageUrl(item.image)" :alt="item.altText" />
             <div>
               <h4 class="text-x-black text-xl font-bold leading-[32px]">
                 {{ item.name }}
@@ -45,17 +45,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 interface Testimonial {
-  text: string
-  image: string
-  altText: string
-  name: string
-  location: string
+  text: string;
+  image: string;
+  altText: string;
+  name: string;
+  location: string;
 }
-
-const baseImage = '/src/assets/images/misc/';
 
 const testimonials: Testimonial[] = [
   {
@@ -93,18 +91,21 @@ const testimonials: Testimonial[] = [
     name: "Carlos Rodriguez",
     location: "Madrid, Spain"
   }
-]
+];
 
-const currentIndex = ref(0)
+const currentIndex = ref(0);
+
+const getImageUrl = (image: string) => {
+  return new URL(`../assets/images/misc/${image}`, import.meta.url).href;
+};
 
 const next = () => {
-  currentIndex.value = (currentIndex.value + 1) % testimonials.length
-}
+  currentIndex.value = (currentIndex.value + 1) % testimonials.length;
+};
 
 const prev = () => {
-  currentIndex.value = 
-    (currentIndex.value - 1 + testimonials.length) % testimonials.length
-}
+  currentIndex.value = (currentIndex.value - 1 + testimonials.length) % testimonials.length;
+};
 </script>
 
 <style scoped>
@@ -112,5 +113,6 @@ const prev = () => {
   transition: transform 0.5s ease-in-out;
 }
 </style>
+
 <!-- Ridwan Panca Putra Pamungkas -->
 <!-- V3423075 | D3TI C -->

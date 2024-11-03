@@ -70,7 +70,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
               <div class="flex flex-col gap-6">
                 <div class="h-[96px] border border-[1.5px] border-[#C1C1C1] p-6 flex items-center gap-4 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
                   <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-                    <img src="@/assets/images/logo/startup.png" alt="Startup">
+                    <img src="@/assets/images/logo/startup.png" alt="Startup" loading="lazy">
                   </div>
                   <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">
                     Startup
@@ -78,7 +78,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 </div>
                 <div class="h-[96px] border border-[1.5px] border-[#C1C1C1] p-6 flex items-center gap-4 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
                   <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-                    <img src="@/assets/images/logo/business.png" alt="Business">
+                    <img src="@/assets/images/logo/business.png" alt="Business" loading="lazy"
                   </div>
                   <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">
                     Business
@@ -86,7 +86,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 </div>
                 <div class="h-[96px] border border-[1.5px] border-[#C1C1C1] p-6 flex items-center gap-4 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
                   <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-                    <img src="@/assets/images/logo/economy.png" alt="Economy">
+                    <img src="@/assets/images/logo/economy.png" alt="Economy" loading="lazy">
                   </div>
                   <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">
                     Economy
@@ -94,7 +94,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 </div>
                 <div class="h-[96px] border border-[1.5px] border-[#C1C1C1] p-6 flex items-center gap-4 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
                   <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
-                    <img src="@/assets/images/logo/technology.png" alt="Technology">
+                    <img src="@/assets/images/logo/technology.png" alt="Technology" loading="lazy">
                   </div>
                   <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px] group-hover:text-white transition duration-200 ease-in-out">
                     Technology

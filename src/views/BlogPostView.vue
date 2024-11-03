@@ -9,7 +9,7 @@ import JoinContent from '@/components/JoinContent.vue'
       <section class="px-[40px] md:px-[60px] lg:px-[80px] pt-[80px] flex justify-center items-center">
         <div class="w-full md:w-3/4 lg:w-1/2 flex flex-col items-start gap-4 md:pt-[48px]">
           <div class="flex items-center justify-center gap-4">
-            <img src="@/assets/images/misc/man-with-glasses.png" alt="Man with glasses">
+            <img src="@/assets/images/misc/man-with-glasses.png" alt="Man with glasses" loading="lazy">
             <div>
               <h3 class="text-x-yellow text-3xl font-bold leading-[40px] tracking-[-1px]">Jonathan Vallen</h3>
               <p class="text-x-mediumgrey leading-[28px]">Posted on 27th January 2022</p>
@@ -17,14 +17,14 @@ import JoinContent from '@/components/JoinContent.vue'
           </div>
           <h1 class="text-x-black text-5xl font-bold leading-[64px] tracking-[-2px]">Step-by-step guide to choosing great font pairs</h1>
           <div class="flex items-center justify-between gap-4">
-            <img src="@/assets/images/logo/startup.png" alt="Startup">
+            <img src="@/assets/images/logo/startup.png" alt="Startup" loading="lazy">
             <h4 class="text-x-black font-bold text-2xl leading-[32px]">Startup</h4>
           </div>
         </div>
       </section>
 
       <div class="px-[40px] md:px-[60px] lg:px-[80px] py-[40px]">
-        <img src="@/assets/images/misc/woman-with-glasses.png" alt="Woman with glasses">
+        <img src="@/assets/images/misc/woman-with-glasses.png" alt="Woman with glasses" loading="lazy">
       </div>
 
       <section class="bg-white px-[40px] md:px-[60px] lg:px-[80px] flex items-center justify-center lg:py-[48px]">
@@ -71,7 +71,7 @@ import JoinContent from '@/components/JoinContent.vue'
           <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">What to read next</h2>
           <div class="flex flex-col lg:flex-row justify-between items-center gap-20 lg:gap-6">
             <div class="flex flex-col gap-4 hover:cursor-pointer">
-              <img src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board">
+              <img src="@/assets/images/misc/two-woman-in-erase-board.png" alt="Two woman in erase board" loading="lazy">
               <p class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;|&nbsp; Aug 23, 2021</p>
               <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px]">A UX Case Study Creating a Studious Environment for Students:</h3>
               <p class="text-x-black text-opacity-70 leading-[28px]">
@@ -80,7 +80,7 @@ import JoinContent from '@/components/JoinContent.vue'
               </p>
             </div>
             <div class="flex flex-col gap-4 hover:cursor-pointer">
-              <img src="@/assets/images/misc/people-doing-handshake.png" alt="People doing handshake">
+              <img src="@/assets/images/misc/people-doing-handshake.png" alt="People doing handshake" loading="lazy">
               <p class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;|&nbsp; Aug 23, 2021</p>
               <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px]">A UX Case Study Creating a Studious Environment for Students:</h3>
               <p class="text-x-black text-opacity-70 leading-[28px]">
@@ -89,7 +89,7 @@ import JoinContent from '@/components/JoinContent.vue'
               </p>
             </div>
             <div class="flex flex-col gap-4 hover:cursor-pointer">
-              <img src="@/assets/images/misc/woman-looking-man.png" alt="Woman looking at man">
+              <img src="@/assets/images/misc/woman-looking-man.png" alt="Woman looking at man" loading="lazy">
               <p class="text-x-black text-sm font-medium leading-[20px]">By <span class="text-x-yellow">John Doe</span> &nbsp;|&nbsp; Aug 23, 2021</p>
               <h3 class="text-x-black text-3xl font-bold leading-[40px] tracking-[-1px]">A UX Case Study Creating a Studious Environment for Students:</h3>
               <p class="text-x-black text-opacity-70 leading-[28px]">

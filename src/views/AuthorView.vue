@@ -9,7 +9,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
     <main class="w-full h-full bg-white overflow-hidden flex flex-col gap-[40px] lg:gap-[80px] py-[80px]">
       <section class="bg-x-lavender py-[64px] md:py-[128px] flex justify-center items-center relative">
         <div class="w-[80%] lg:w-[75%] flex flex-col md:flex-row justify-center items-center gap-8">
-          <img src="@/assets/images/misc/man-wearing-sunglasses.png" alt="Man wearing sunglasses">
+          <img src="@/assets/images/misc/man-wearing-sunglasses.png" alt="Man wearing sunglasses" loading="lazy">
           <div class="flex flex-col justify-between gap-4">
             <h1 class="text-x-black text-3xl lg:text-5xl font-bold tracking-[-2px] lg:leading-[64px]">Hey there, I’m Andrew Jonhson and welcome to my Blog</h1>
             <p class="text-x-mediumgrey leading-[28px]">

@@ -3,7 +3,6 @@ import MainLayout from '@/layouts/MainLayout.vue'
 import JoinContent from '@/components/JoinContent.vue'
 import CardCategory from '@/components/CardCategory.vue'
 import PostCarousel from '@/components/PostCarousel.vue'
-import CustomButton from '@/components/CustomButton.vue';
 </script>
 
 <template>
@@ -11,7 +10,7 @@ import CustomButton from '@/components/CustomButton.vue';
     <main class="w-full h-full overflow-x-hidden flex flex-col gap-[40px] md:gap-[80px] py-[80px]">
       <!-- Hero -->
       <section class="bg-x-lavender py-[80px] px-[40px] md:px-[60px] lg:px-[80px] flex flex-col lg:flex-row justify-between items-center gap-8">
-        <img class="lg:order-last" src="@/assets/images/misc/man-with-white-shirt.png" alt="Man with white T-Shirt">
+        <img class="lg:order-last" src="@/assets/images/misc/man-with-white-shirt.png" alt="Man with white T-Shirt" loading="lazy">
         <div class="flex flex-col gap-5">
           <h5 class="text-x-black font-medium tracking-[3px]">FEATURED POST</h5>
           <h2 class="text-x-black text-4xl font-bold tracking-[-2px] leading-[48px]">Step-by-step guide to choosing great font pairs</h2>
@@ -19,13 +18,12 @@ import CustomButton from '@/components/CustomButton.vue';
           <p class="text-x-mediumgrey leading-[28px]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident.
           </p>
-          <CustomButton
-            link="blog/post"
-            content="Read More >"
-            :width="204"
-            :px="48"
-            :py="16"
-          />
+          <RouterLink
+            to="/blog/post"
+            class="w-[204px] flex items-center justify-center font-bold bg-x-blue px-[48px] py-[16px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out"
+          >
+            Read More {{ '>' }}
+          </RouterLink>
         </div>
       </section>
 

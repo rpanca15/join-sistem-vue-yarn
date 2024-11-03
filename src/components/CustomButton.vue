@@ -1,11 +1,10 @@
 <template>
-  <a
-    :href="props.link"
+  <RouterLink
+    :to="props.link"
     :class="`flex items-center justify-center font-bold ${props.bg} px-[${props.px}px] py-[${props.py}px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out`"
-    :style="`width: ${props.width}px;`"
   >
     {{ props.content }}
-  </a>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">

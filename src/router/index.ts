@@ -20,38 +20,64 @@ const router = createRouter({
       path: '/blog',
       name: 'blog',
       component: BlogView,
+      meta: {
+        title: 'Blog | Join Sistem - FE Intermediate'
+      }
     },
     {
       path: '/blog/post',
       name: 'blog-post',
       component: BlogPostView,
+      meta: {
+        title: 'Blog Post | Join Sistem - FE Intermediate'
+      }
     },
     {
       path: '/category',
       name: 'category',
       component: CategoryView,
+      meta: {
+        title: 'Category | Join Sistem - FE Intermediate'
+      }
     },
     {
       path: '/about',
       name: 'about-us',
       component: AboutView,
+      meta: {
+        title: 'About Us | Join Sistem - FE Intermediate'
+      }
     },
     {
       path: '/contact',
       name: 'contact-us',
       component: ContactView,
+      meta: {
+        title: 'Contact Us | Join Sistem - FE Intermediate'
+      }
     },
     {
       path: '/author',
       name: 'author',
       component: AuthorView,
+      meta: {
+        title: 'Author | Join Sistem - FE Intermediate'
+      }
     },
     {
       path: '/privacy',
       name: 'privacy-policy',
       component: PrivacyView,
+      meta: {
+        title: 'Privacy Policy | Join Sistem - FE Intermediate'
+      }
     },
   ],
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title as string || 'Join Sistem - Front End Intermediate'
+  next()
 })
 
 export default router

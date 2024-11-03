@@ -3,8 +3,8 @@ import MainLayout from '@/layouts/MainLayout.vue'
 import JoinContent from '@/components/JoinContent.vue'
 import CardAuthor from '@/components/CardAuthor.vue'
 import CardCategory from '@/components/CardCategory.vue'
-import TestimoniContent from '@/components/TestimoniContent.vue';
-import CustomButton from '@/components/CustomButton.vue';
+import CustomButton from '@/components/CustomButton.vue'
+import TestimonialCarousel from '@/components/TestimonialCarousel.vue'
 </script>
 
 <template>
@@ -140,10 +140,10 @@ import CustomButton from '@/components/CustomButton.vue';
             position="Content Writer @Company"
             image="author-1.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText:'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -152,10 +152,10 @@ import CustomButton from '@/components/CustomButton.vue';
             position="Content Writer @Company"
             image="author-2.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -164,10 +164,10 @@ import CustomButton from '@/components/CustomButton.vue';
             position="Content Writer @Company"
             image="author-3.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -176,10 +176,10 @@ import CustomButton from '@/components/CustomButton.vue';
             position="Content Writer @Company"
             image="author-4.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
         </div>
@@ -209,7 +209,7 @@ import CustomButton from '@/components/CustomButton.vue';
             <p class="text-x-black leading-[28px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
           <div class="border border-x-mediumgrey border-opacity-40"></div>
-          <TestimoniContent />
+          <TestimonialCarousel />
         </div>
       </section>
 
@@ -217,3 +217,5 @@ import CustomButton from '@/components/CustomButton.vue';
     </main>
   </MainLayout>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

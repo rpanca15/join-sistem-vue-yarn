@@ -44,3 +44,5 @@ const props = defineProps({
 
 const imageSrc = computed(() => `/src/assets/images/misc/${props.image}`)
 </script>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

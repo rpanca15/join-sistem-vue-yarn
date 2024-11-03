@@ -14,3 +14,5 @@ import ButtonLink from '@/components/CustomButton.vue'
     />
   </section>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

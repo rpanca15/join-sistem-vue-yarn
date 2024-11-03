@@ -131,3 +131,5 @@ import MainLayout from '@/layouts/MainLayout.vue'
     </main>
   </MainLayout>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

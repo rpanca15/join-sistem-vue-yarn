@@ -95,10 +95,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-1.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText:'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -107,10 +107,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-2.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -119,10 +119,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-3.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -131,10 +131,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-4.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -143,10 +143,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-5.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -155,10 +155,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-6.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -167,10 +167,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-7.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
           <CardAuthor
@@ -179,10 +179,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
             position="Content Writer @Company"
             image="author-8.png"
             :socialLinks="[
-              { icon:'facebook', url:'#', color:'x-mediumgrey', altText: 'Facebook Logo' },
-              { icon:'twitter', url:'#', color:'x-mediumgrey', altText: 'Twitter Logo' },
-              { icon:'instagram', url:'#', color:'x-mediumgrey', altText: 'Instagram Logo' },
-              { icon:'linkedin', url:'#', color:'x-mediumgrey', altText: 'LinkedIn Logo' }
+              { icon:'facebook', url:'#', color:'x-mediumgrey' },
+              { icon:'twitter', url:'#', color:'x-mediumgrey' },
+              { icon:'instagram', url:'#', color:'x-mediumgrey' },
+              { icon:'linkedin', url:'#', color:'x-mediumgrey' }
             ]"
           />
         </div>
@@ -192,3 +192,5 @@ import MainLayout from '@/layouts/MainLayout.vue'
     </main>
   </MainLayout>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

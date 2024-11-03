@@ -27,7 +27,6 @@
         :color="link.color"
         :link="link.url"
         :size="16"
-        :altText="link.altText"
       />
     </ul>
   </a>
@@ -60,7 +59,6 @@ const props = defineProps({
       icon: string
       url: string
       color: string
-      altText: string
     }>,
     default: () => [],
   },
@@ -69,3 +67,5 @@ const props = defineProps({
 const { image } = toRefs(props)
 const imageSrc = computed(() => `/src/assets/images/misc/${image.value}`)
 </script>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

@@ -16,10 +16,10 @@ import MainLayout from '@/layouts/MainLayout.vue'
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
             <ul class="flex items-start gap-6">
-              <SocmedIcon icon="facebook" link="#" altText="Facebook Logo" />
-              <SocmedIcon icon="twitter" link="#" altText="Twitter Logo" />
-              <SocmedIcon icon="instagram" link="#" altText="Instagram Logo" />
-              <SocmedIcon icon="linkedin" link="#" altText="Linkedin Logo" />
+              <SocmedIcon icon="facebook" link="#" />
+              <SocmedIcon icon="twitter" link="#" />
+              <SocmedIcon icon="instagram" link="#" />
+              <SocmedIcon icon="linkedin" link="#" />
             </ul>
           </div>
         </div>
@@ -52,3 +52,5 @@ import MainLayout from '@/layouts/MainLayout.vue'
     </main>
   </MainLayout>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

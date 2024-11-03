@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="w-[266px] h-[228px] flex flex-col gap-4 border border-x-mediumgrey bg-opacity-30 p-6 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
+  <a :href="link" class="w-[296px] md:w-[266px] h-[228px] flex flex-col gap-4 border border-x-mediumgrey bg-opacity-30 p-6 hover:bg-x-blue hover:border-x-blue hover:cursor-pointer transition duration-200 ease-in-out group">
     <div class="w-[48px] h-[48px] bg-x-lightyellow rounded flex items-center justify-center">
       <img :src="logoSrc" :alt="`Logo ${logo}`">
     </div>
@@ -32,3 +32,5 @@ const props = defineProps({
 
 const logoSrc = computed(() => `/src/assets/images/logo/${props.logo}`)
 </script>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

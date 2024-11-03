@@ -1,7 +1,8 @@
 <template>
   <a
     :href="props.link"
-    :class="`w-[${props.width}px] flex items-center justify-center font-bold ${props.bg} px-[${props.px}px] py-[${props.py}px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out`"
+    :class="`flex items-center justify-center font-bold ${props.bg} px-[${props.px}px] py-[${props.py}px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out`"
+    :style="`width: ${props.width}px;`"
   >
     {{ props.content }}
   </a>
@@ -37,3 +38,5 @@ const props = defineProps({
   }
 })
 </script>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

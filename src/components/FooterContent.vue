@@ -25,21 +25,21 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
       </ul>
     </div>
     <div class="w-full bg-white bg-opacity-5 p-10 flex flex-col lg:flex-row justify-between items-center gap-4">
-        <p class="text-white text-2xl md:text-4xl font-bold w-full">Subscribe to our news letter to get latest updates and news</p>
-        <form action="#" class="flex flex-col md:flex-row items-center justify-center gap-4 mb-5 w-full">
-          <input type="text" class="w-full md:w-[60%] bg-transparent border border-x-darkgrey p-4 text-white" placeholder="Enter Your Email" required>
-          <button type="submit" class="w-full md:w-[40%] flex items-center justify-center font-bold bg-x-blue py-4 text-white hover:bg-x-yellow transition duration-150 ease-in-out">
-            Subscribe
-          </button>
-        </form>
+      <p class="text-white text-2xl md:text-4xl font-bold w-full">Subscribe to our news letter to get latest updates and news</p>
+      <form action="#" class="flex flex-col md:flex-row items-center justify-center gap-4 mb-5 w-full">
+        <input type="text" class="w-full md:w-[60%] bg-transparent border border-x-darkgrey p-4 text-white" placeholder="Enter Your Email" required>
+        <button type="submit" class="w-full md:w-[40%] flex items-center justify-center font-bold bg-x-blue py-4 text-white hover:bg-x-yellow transition duration-150 ease-in-out">
+          Subscribe
+        </button>
+      </form>
     </div>
     <div>
       <div class="flex flex-col md:flex-row items-start justify-between gap-4">
         <ul class="w-full flex md:order-last justify-center md:justify-end items-center gap-6">
-          <SocmedIcon color="x-mediumgrey" icon="facebook" link="#" altText="Facebook Logo" />
-          <SocmedIcon color="x-mediumgrey" icon="twitter" link="#" altText="Twitter Logo" />
-          <SocmedIcon color="x-mediumgrey" icon="instagram" link="#" altText="Instagram Logo" />
-          <SocmedIcon color="x-mediumgrey" icon="linkedin" link="#" altText="Linkedin Logo" />
+          <SocmedIcon color="x-mediumgrey" icon="facebook" link="#"/>
+          <SocmedIcon color="x-mediumgrey" icon="twitter" link="#"/>
+          <SocmedIcon color="x-mediumgrey" icon="instagram" link="#"/>
+          <SocmedIcon color="x-mediumgrey" icon="linkedin" link="#"/>
         </ul>
         <div class="w-full flex flex-col gap-2">
           <span class="text-white text-opacity-70">Finstreet 118 2561 Fintown</span>
@@ -49,3 +49,5 @@ import SocmedIcon from '@/components/SocmedIcon.vue';
     </div>
   </footer>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

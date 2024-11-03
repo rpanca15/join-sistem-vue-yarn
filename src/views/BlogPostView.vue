@@ -104,3 +104,5 @@ import JoinContent from '@/components/JoinContent.vue'
     </main>
   </MainLayout>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

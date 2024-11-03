@@ -29,9 +29,7 @@ const props = defineProps({
     type: Number,
     default: 16,
   },
-  altText: {
-    type: String,
-    default: '',
-  },
 })
 </script>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import MainLayout from '@/layouts/MainLayout.vue'
 import JoinContent from '@/components/JoinContent.vue'
-import CardCategory from '@/components/CardCategory.vue';
-import PostContent from '@/components/PostContent.vue';
+import CardCategory from '@/components/CardCategory.vue'
+import PostCarousel from '@/components/PostCarousel.vue'
+import CustomButton from '@/components/CustomButton.vue';
 </script>
 
 <template>
@@ -18,66 +19,20 @@ import PostContent from '@/components/PostContent.vue';
           <p class="text-x-mediumgrey leading-[28px]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident.
           </p>
-          <a href="blog/post" class="w-[204px] flex items-center justify-center bg-x-blue px-[48px] py-[16px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out">
-            Read More >
-          </a>
+          <CustomButton
+            link="blog/post"
+            content="Read More >"
+            :width="204"
+            :px="48"
+            :py="16"
+          />
         </div>
       </section>
 
       <!-- All Post -->
       <section class="px-[40px] md:px-[60px] lg:px-[80px] pt-[80px] flex flex-col gap-8">
         <h2 class="text-x-black text-4xl font-bold leading-[48px] tracking-[-2px]">All Post</h2>
-        <div class="flex flex-col gap-[80px] lg:gap-8 pt-[48px] border-t border-x-mediumgrey border-opacity-32">
-          <PostContent
-            link="blog/post"
-            image="two-woman-in-erase-board.png"
-            category="STARTUP"
-            title="Design tips for designers that cover everything you need"
-            description="
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident."
-          />
-          <PostContent
-            link="blog/post"
-            image="people-doing-handshake.png"
-            category="BUSINESS"
-            title="How to build rapport with your web design clients"
-            description="
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident."
-          />
-          <PostContent
-            link="blog/post"
-            image="woman-looking-man.png"
-            category="STARTUP"
-            title="Logo design trends to avoid in 2022"
-            description="
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident."
-          />
-          <PostContent
-            link="blog/post"
-            image="people-walking.png"
-            category="TECHNOLOGY"
-            title="8 Figma design systems you can download for free today"
-            description="
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident."
-          />
-          <PostContent
-            link="blog/post"
-            image="two-woman-in-erase-board.png"
-            category="ECONOMY"
-            title="Font sizes in UI design: The complete guide to follow"
-            description="
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident."
-          />
-          <div class="flex justify-center items-center gap-4">
-            <a class="text-x-mediumgrey text-2xl text-center font-bold leading-[32px]" href="#">< Prev</a>
-            <a class="text-x-black text-3xl text-center font-bold leading-[40px] tracking-[-1px]" href="#">Next ></a>
-          </div>
-        </div>
+        <PostCarousel />
       </section>
 
       <!-- All Category -->
@@ -95,3 +50,5 @@ import PostContent from '@/components/PostContent.vue';
     </main>
   </MainLayout>
 </template>
+<!-- Ridwan Panca Putra Pamungkas -->
+<!-- V3423075 | D3TI C -->
